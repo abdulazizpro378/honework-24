@@ -1,0 +1,83 @@
+@use "../abstract/mixin" as mixin;
+@use "../abstract/varianles" as var;
+
+.nav-left-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  z-index: 10;
+}
+
+.navbar {
+  position: fixed;
+
+  width: 100%;
+  transition: 0.5s;
+}
+.navbar-shrink {
+  padding: 20px 0;
+  transition: 0.5s all ease-in-out;
+ 
+}
+.navbar-collapse {
+  flex-grow: 0;
+  margin-top: 4px;
+  align-items: center;
+  background-color: var.$main-color;
+}
+
+.navbar-toggler {
+  padding: 0 5px;
+}
+
+.collapse .btn-outline-success {
+  margin: 10px !important;
+}
+
+.bg-body-tertiary {
+  background: var.$main-color !important;
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 10px 10px;
+
+  &:hover {
+    color: #ecc9c9 !important;
+  }
+}
+
+.btn-outline-success {
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+  padding: 10px 40px;
+  border: 1px solid white;
+  margin-top: 10px;
+  color: #ffffff;
+  border-radius: 40px;
+  &:hover {
+    background: rgb(146, 18, 18);
+    border: 1px solid white;
+    color: #fff;
+  }
+}
+
+.navbar-toggler {
+  color: white;
+  background-color: var.$main-color;
+  border: 1px solid whitesmoke;
+  border-radius: 0.375rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.collapse {
+  .btn-outline-success {
+    margin: auto;
+  }
+}

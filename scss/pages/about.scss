@@ -1,0 +1,53 @@
+@use "../global";
+@use "../abstract/mixin" as mixin;
+@use "../abstract/varianles" as var;
+
+#about {
+  margin-bottom: 360px;
+  .about-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .spoon-top {
+      padding-top: 150px;
+      @include mixin.center;
+      margin-bottom: 20px;
+
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 130%;
+
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: black;
+        margin-bottom: 8px;
+      }
+    }
+
+    .about-img {
+        margin: 30px 0;
+        img {
+            max-width: 720px;
+            width: 100%;
+        }
+    }
+
+    p {
+      font-family: "Open Sans",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+    max-width: 720px;
+
+      letter-spacing: 0.04em;
+
+      color: #242424;
+
+      opacity: 0.8;
+    }
+  }
+}
