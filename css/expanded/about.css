@@ -288,7 +288,7 @@ nav {
 }
 #footer-end .footer-row .footer-top {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   position: absolute;
   top: -190px;
   padding: 64px 0;
@@ -492,9 +492,6 @@ nav {
   }
   #footer-end form .divinput input {
     padding-right: 270px !important;
-  }
-  #footer-end .footer-row .footer-top {
-    left: 80px;
   }
   #footer-end .footer-row .cards {
     display: flex;
